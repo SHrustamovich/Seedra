@@ -1,0 +1,201 @@
+.planting{
+    padding-top: 40px;
+    &__container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: url("../../img/mainbg.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-color: #EAF1EB;
+        border-radius: 24px;
+    }
+    &__info{
+        padding: 48px 70px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 54px;
+        letter-spacing: -0.05em;
+    }
+    &__text{
+        padding-top: 12px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__cost{
+        display: flex;
+        align-items: center;
+        &-icon{
+            width: 28px;
+            height: 36px;
+        }
+        &-now{
+            padding: 0 24px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 54px;
+        }
+        &-old{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 54px;
+            color: #70737C;
+        }
+    }
+    &__btn{
+        padding-top: 24px;
+        &-one{
+        width: 153px;
+        height: 51px;
+        background: #359740;
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 178.19%;
+        letter-spacing: -0.035em;
+        color: #FFF;
+        margin-right: 12px;
+    }
+      &-two{
+        width: 153px;
+        height: 51px;
+        background: #FFF;
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 178.19%;
+        letter-spacing: -0.035em;
+        color: #359740;
+    }
+    &__img{
+        width: 349px;
+        &-img{
+            width: 100%;
+        }
+    }
+}
+&__sell{
+    padding-top: 16px;
+   &-all{
+    text-align: center;
+    width: 100%;
+    background: url("../../icon/bgright.svg"),url("../../icon/bgleft.svg");
+    background-position:right bottom,left bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 230, 46, 0.09);
+    border-radius: 12px;
+   }
+   &-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1F2533;
+   }
+   &-text{
+    padding: 0 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 178.19%;
+    letter-spacing: -0.035em;
+    color: #70737C;
+   }
+}
+}
+@media (max-width:1150px) {
+    .planting{
+        &__title{
+            font-size: 28px;
+             line-height: 44px;
+             letter-spacing: -0.08em;
+        }
+        &__text{
+            padding-top: 12px;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &__info{
+            padding: 28px 40px;
+        }
+        &__cost{
+            display: flex;
+            align-items: center;
+            &-icon{
+                width: 20px;
+                height: 28px;
+            }
+            &-now{
+                padding: 0 12px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 34px;
+                line-height: 50px;
+            }
+            &-old{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 50px;
+                color: #70737C;
+            }
+        }
+        
+    }
+}
+@media (max-width:960px) {
+    .planting{
+        &__title{
+            font-size: 22px;
+             line-height: 40px;
+             letter-spacing: -0.08em;
+        }
+        &__text{
+            padding-top: 8px;
+            font-style: normal;
+            font-size: 10px;
+            line-height: 20px;
+        }
+        &__info{
+            padding: 20px 32px;
+        }
+       &__btn{
+        display: flex;
+        &-one{
+            width: 132px;
+        }
+        &-two{
+            width: 132px;
+        }
+       }
+        
+    }
+}
+@media (max-width:767px) {
+    .planting{
+      &__container{
+        display: flex;
+        flex-direction: column-reverse;
+          }
+      &__img{
+        display: flex;
+        width: 210px;
+        &-img{
+            width: 100%;
+            margin: 0 auto;
+        }
+      }
+    }
+}

@@ -1,0 +1,137 @@
+.header{
+   width: 100%;
+   height: 72px;
+   padding-top: 24px;
+   box-shadow: 0px 4px 12px rgba(207, 207, 207, 0.25);
+   align-items: center;
+   &__logo{
+      width: 97px;
+      height: 21px;
+   }
+   &__container{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   &__menu{
+      padding-left: 40px;
+      &-list{
+         display: flex;
+         justify-content: flex-end;
+         padding: 0 47px 0 0;
+      }
+      &-item{
+         border-right: 1px solid #EFEFEF;
+          padding: 0 8px;
+      }
+      &-item:last-child{
+         border-right: none;
+      }
+   }
+   &__search{
+      width: 285px;
+      border: 1px solid #EFEFEF;
+      border-radius: 71px;
+      background: url('../../icon/search.svg');
+      background-repeat: no-repeat;
+      background-position:5px center;
+      padding: 5px 28px;
+      outline: none;
+   }
+   &__search::placeholder{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 178.19%;
+      padding-left: 25px;
+      align-items: center;
+   }
+  &__media{
+   display: flex;
+   align-items: center;
+   &-all{
+      display: flex;
+      padding-right: 12px;
+      &-link{
+         padding-left: 8px;
+      }
+   }
+  }
+   &__like{
+      display: flex;
+      justify-content: space-around;
+      padding-left: 16px;
+   }
+   &__burger{
+      display: none;
+      width: 48px;
+      &-close{
+         display: none;
+         width: 48px;
+      }
+   }
+}
+@media (max-width:1150px) {
+.header{
+   display: block;
+   align-items: center;
+   text-align: center;
+   &__gam{
+   display: block;
+   width: 24px;
+   padding-left: 24px;
+    }
+    &__menu{
+       display: none; 
+      &-listopen{
+         display: block;
+         position: absolute;
+         top: 40px;
+         left: 0;
+         padding: 50px 50px;
+      }
+      &-item{
+         padding-right: 24px;
+      }
+    }
+    &__burger{
+      width: 40px;
+      display: block;
+      background: none;
+      padding-left: 24px;
+      &-close{
+         display: none;
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+   .header{
+      &__media-all{
+         display: none;
+      }
+      &__search{
+         display: none;
+      }
+     &__menu{
+        right: 0;
+        &-list{
+         display: flex;
+         flex-direction: column;
+         position: block;
+         background: #ccc;
+         right: 0;
+         border: none;
+         padding: 0;
+      }
+      &-listopen{
+         padding:50px 0;
+      }
+      &-item{
+         padding:24px 0;
+         border: none;
+      }
+     }
+   }
+}
+
