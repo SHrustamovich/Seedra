@@ -1,7 +1,6 @@
 let burgerBtn = document.getElementById("burger")
 const menu = document.getElementById("menu")
 const close = document.getElementById("close-id")
-
 burgerBtn.addEventListener('click', function(){
     if(menu.classList.contains('header__menu-listopen')){
         menu.classList.remove('header__menu-listopen')
@@ -54,3 +53,32 @@ burgerBtn.addEventListener('click', function(){
 // categoryArr.map((e) => {
 //     categoryBtn
 // })
+let swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+   
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+          spaceBetweenSlides: 0
+      },
+      690: {
+          slidesPerView: 3,
+          spaceBetweenSlides: 0
+      }
+  },
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+  console.log(swiper);

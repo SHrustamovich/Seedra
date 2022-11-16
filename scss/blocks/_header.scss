@@ -27,6 +27,10 @@
       &-item:last-child{
          border-right: none;
       }
+      &-link:hover{
+          cursor: pointer;
+          color: #359740;
+      }
    }
    &__search{
       width: 285px;
@@ -52,9 +56,16 @@
    &-all{
       display: flex;
       padding-right: 12px;
-      &-link{
-         padding-left: 8px;
-      }
+   }
+   &-link{
+      padding-left: 8px;         
+         &:hover{
+            path{
+               stroke: #Fff;
+               fill: #359740;
+            }
+         }
+     
    }
   }
    &__like{

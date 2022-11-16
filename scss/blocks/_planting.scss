@@ -50,8 +50,10 @@
         }
     }
     &__btn{
+        // cursor: pointer;
         padding-top: 24px;
         &-one{
+        cursor: pointer;
         width: 153px;
         height: 51px;
         background: #359740;
@@ -63,8 +65,13 @@
         letter-spacing: -0.035em;
         color: #FFF;
         margin-right: 12px;
+        &:hover{
+            background: #FFF;
+            color: #359740;
+        }
     }
       &-two{
+        cursor: pointer;
         width: 153px;
         height: 51px;
         background: #FFF;
@@ -75,6 +82,10 @@
         line-height: 178.19%;
         letter-spacing: -0.035em;
         color: #359740;
+        &:hover{
+            background: #359740;
+            color: #FFF;
+        }
     }
     &__img{
         width: 349px;
